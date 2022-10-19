@@ -1,0 +1,25 @@
+Builder
+
+Por que existe?
+    Separar a construção de um objeto complexo da sua representação de modo que o mesmo processo de contrução possa criar diferentes representações.
+
+Vantages:
+    Separa a criação da utilização
+    O cliente não precisa criar o objeto diretamente usando NEW;
+    O mesmo código permite criar objeto diferentes;
+    Reduz o acomplamento de código.
+    Ajuda nos princípios SRP(single responsability Principle) e OCP (Open Close Principle)
+
+Desvantagens
+    O Builder pode ficar muito complexo
+
+Quando usar?
+    Quando o objeto tem construtores muito grandes;
+    Quando existe a composição de vários objetos;
+    Permite a criação de um objeto em etapas.
+    Permite fazer o método chaining (um método chama outro).
+
+Quando não usar?
+
+
+

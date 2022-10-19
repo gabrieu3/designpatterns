@@ -1,0 +1,20 @@
+Singleton
+
+Por que existe?
+    Garantir que uma classe tenha somente uma instância no programa e forneça um ponto de acesso global para a mesma.
+
+Problemas:
+    Quebra o princípio da responsábilidade única.
+    Difícil de testar
+
+Quando usar?
+    Necessidade de um ponto de acesso global. Exemplo: variáveis globais.
+    Acesso a base de dados.
+    Sistema de arquivos.
+    Serviço de Impressão.
+    Exemplo de acesso único: Aplication properties, um objeto único que acessas essas configs do arquivo.
+    Encapsula a instância.
+
+Quando não usar?
+
+Substituir pelo monostate;
