@@ -1,0 +1,37 @@
+Prototype
+Categoria:
+
+
+Por que existe?
+    Especificar os tipos de objetos a serem criados usando uma instância-protótipo e criar novos objetos pela cópia desse protótipo.
+    Permite que você tenha uma instância real e a partir dessa instância você possa clonar ela.
+
+Vantages:
+
+
+
+CONTEXT pode utilizar o PROTOTYPE (Association)
+ ___________           ____________
+ | CONTEXT |---------> | PROTOTYPE |
+ |_________|           |___________|
+     |                      ^
+     |                      |
+ p = prototype.Clone()___________________
+                      |                 |
+                ______________     _____________
+                | PROTOTYPE A |     | PROTOTYPE B |
+                |____________|     |____________|
+                       |                 |
+                 Retorna uma cópia   Retorna uma copia dele mesmo
+                 dele mesmo
+
+
+Desvantagens
+
+Quando usar?
+
+
+Quando não usar?
+
+
+
