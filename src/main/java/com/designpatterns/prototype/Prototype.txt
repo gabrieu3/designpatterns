@@ -1,0 +1,43 @@
+Prototype
+Categoria: Comportamental (se preocupam com algoritmos, atribuição de responsabilidade entre os objetos e os padrões de comunicação entre eles).
+
+
+Por que existe?
+    Definir uma família de algoritmos, encapsular cada um deles e fazê-los intercambiáveis. O strategy permite que o algoritmo varie independente dos clientes que o utilizam.
+
+Vantages:
+    Separa a regra de negócio de variações de algoritmos (Princípio da Responsabilida Única)
+    Utiliza o princípio do aberto e fechado, pois a regra de negócio não vai mudar (inserir novos IF) já o algoritmo sim, mas ele fica mais isolado.
+    Define uma família de algoritmos cada um com uma variação
+    Usa composição (interface passada para o construtor ou via SET) para permitir a troca de algoritmos em tempo de execução.
+    Permite vários algoritmos sem necessidade de condicional.
+    Troca a herança por composição (dependência via contrutor ou set).
+
+
+CONTEXT pode ter o STRATEGY (Aggregation)
+ ___________           ___________
+ | CONTEXT |@--------->| STRATEGY |
+ |_________|           |_________ |
+                            ^
+                            |
+                      ___________________
+                      |                 |
+                ______________     _____________
+                | STRATEGY A |     | STRATEGY B |
+                |____________|     |____________|
+
+
+
+Desvantagens
+    O Cliente precisa conhecer as estratégias que vai usar.
+    Pode tornar complexa a hierarquia de classes para aplicar novos algoritmos.
+
+Quando usar?
+    Quando tiver variantes do mesmo algoritmo (Exemplo: formas de pagamento, formas de calculo para envio de frete)
+    Quando precisa isolar a regra de negócio do algoritmo que a regra de negócio precisa (Aplicando o principio da responsabilidade Única).
+    Quando você estiver fazendo muito IF para trocar o valor da mesma variável.
+
+Quando não usar?
+
+
+
