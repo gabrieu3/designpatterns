@@ -13,7 +13,8 @@ public class GameStrategyTest {
     void playEasyMode(){
         Boolean equal = false;
         Game game = new Game();
-        String mode = game.play(new EasyStrategy());
+        game.setGameStrategy(new EasyStrategy());
+        String mode = game.play();
         if(mode == "EASY"){
             equal = true;
         }
@@ -24,7 +25,8 @@ public class GameStrategyTest {
     void playNormalMode(){
         Boolean equal = false;
         Game game = new Game();
-        String mode = game.play(new NormalStrategy());
+        game.setGameStrategy(new NormalStrategy());
+        String mode = game.play();
         if(mode == "NORMAL"){
             equal = true;
         }
@@ -35,7 +37,8 @@ public class GameStrategyTest {
     void playHardMode(){
         Boolean equal = false;
         Game game = new Game();
-        String mode = game.play(new HardStrategy());
+        game.setGameStrategy(new HardStrategy());
+        String mode = game.play();
         if(mode == "HARD"){
             equal = true;
         }
@@ -46,7 +49,8 @@ public class GameStrategyTest {
     void playVeryHardMode(){
         Boolean equal = false;
         Game game = new Game();
-        String mode = game.play(new VeryHardStrategy());
+        game.setGameStrategy(new VeryHardStrategy());
+        String mode = game.play();
         if(mode == "VERYHARD"){
             equal = true;
         }

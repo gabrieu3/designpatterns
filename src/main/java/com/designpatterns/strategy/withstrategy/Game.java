@@ -1,7 +1,12 @@
 package com.designpatterns.strategy.withstrategy;
 
 public class Game {
-    public String play(GameStrategy gameStrategy){
-        return gameStrategy.play();
+    private GameStrategy gameStrategy;
+
+    public void setGameStrategy(GameStrategy gameStrategy) {
+        this.gameStrategy = gameStrategy;
+    }
+    public String play(){
+        return this.gameStrategy.play();
     }
 }
