@@ -49,7 +49,6 @@ public class ClientBuilderTest {
                 .lastName("Balestrin")
                 .build();
         Address address = Address.builder().address("Rua das Flores").build();
-
         com.designpatterns.builder.withbuilder.Client client = com.designpatterns.builder.withbuilder.Client.builder().name(name).address(address).email("gabriel@email.com").build();
         com.designpatterns.builder.withbuilder.Client client1 = com.designpatterns.builder.withbuilder.Client.builder().name(name).address(address).email("gabriel@email.com").build();
 
