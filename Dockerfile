@@ -1,22 +1,4 @@
 FROM openjdk:11-jdk
-EXPOSE 8070
-WORKDIR /app
-
-# Copy maven executable to the image
-COPY mvnw .
-COPY .mvn .mvn
-
-# Copy the pom.xml file
-COPY pom.xml .
-
-# Copy the project source
-COPY ./src ./src
-COPY ./pom.xml ./pom.xml
-
-RUN chmod 755 /app/mvnw
-
-RUN ./mvnw dependency:go-offline -B
-
-RUN ./mvnw package
-#RUN ls -al
-ENTRYPOINT ["java","-jar","target/jeitodecozinha-0.0.1-SNAPSHOT.jar"]
+ARG JAR_FILE=target/*.jar
+COPY {JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
