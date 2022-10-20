@@ -1,0 +1,36 @@
+Factory
+Categoria: Creational
+
+
+Por que existe?
+    Classe responsável por criar objetos
+
+
+Vantages:
+
+
+
+CONTEXT pode utilizar o PROTOTYPE (Association)
+ ___________           ____________
+ | CONTEXT |---------> | PROTOTYPE |
+ |_________|           |___________|
+     |                      ^
+     |                      |
+ p = prototype.Clone()___________________
+                      |                 |
+                ______________     _____________
+                | PROTOTYPE A |     | PROTOTYPE B |
+                |____________|     |____________|
+                       |                 |
+                 Retorna uma cópia   Retorna uma copia dele mesmo
+                 dele mesmo
+
+
+Desvantagens
+
+Quando usar?
+
+Quando não usar?
+
+
+
