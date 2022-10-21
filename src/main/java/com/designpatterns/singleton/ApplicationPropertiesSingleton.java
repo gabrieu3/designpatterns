@@ -28,9 +28,10 @@ public class ApplicationPropertiesSingleton {
 
     private void readFileProperties(){
         try{
-            properties.load(new FileInputStream("./src/main/resources/application.properties"));
+            properties.load(new FileInputStream("./classes/application.properties"));
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            //throw new RuntimeException(e);
+            System.out.println("Não encontrou o arquivo application.properties");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
