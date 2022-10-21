@@ -1,8 +1,8 @@
-package com.designpatterns.factory;
+package com.designpatterns.factorymethod;
 
-import com.designpatterns.factory.products.Book;
-import com.designpatterns.factory.products.Magazine;
-import com.designpatterns.factory.products.Product;
+import com.designpatterns.factorymethod.products.Book;
+import com.designpatterns.factorymethod.products.Magazine;
+import com.designpatterns.factorymethod.products.Product;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
@@ -17,7 +17,7 @@ public class FactoryTest {
     @Test
     void createOneBook(){
         Boolean equal = false;
-        BookFactory bookFactory = new BookFactory();
+        com.designpatterns.factorymethod.BookFactory bookFactory = new com.designpatterns.factorymethod.BookFactory();
         Product product1 = bookFactory.getProduct();
         if(product1 instanceof Book){
             equal = true;
@@ -28,7 +28,7 @@ public class FactoryTest {
     @Test
     void createOneMagazine(){
         Boolean equal = false;
-        MagazineFactory magazineFactory = new MagazineFactory();
+        com.designpatterns.factorymethod.MagazineFactory magazineFactory = new com.designpatterns.factorymethod.MagazineFactory();
 
         Product product2 = magazineFactory.getProduct();
         if(product2 instanceof Magazine){
@@ -41,8 +41,8 @@ public class FactoryTest {
     void usingAFactoryToBuilsAListOfDifferentProducts(){
         Boolean equal = false;
         AtomicInteger qtdeMagazine = new AtomicInteger();
-        MagazineFactory magazineFactory = new MagazineFactory();
-        BookFactory bookFactory = new BookFactory();
+        com.designpatterns.factorymethod.MagazineFactory magazineFactory = new com.designpatterns.factorymethod.MagazineFactory();
+        com.designpatterns.factorymethod.BookFactory bookFactory = new com.designpatterns.factorymethod.BookFactory();
         List<Product> shoppingCart = new ArrayList<>();
         for(int i = 1; i < 20; i++){
             if(i%3==0){
