@@ -1,5 +1,6 @@
 package com.designpatterns.singleton;
 
+import com.designpatterns.creational.singleton.ApplicationPropertiesSingleton;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;

@@ -1,8 +1,10 @@
 package com.designpatterns.factorymethod;
 
-import com.designpatterns.factorymethod.products.Book;
-import com.designpatterns.factorymethod.products.Magazine;
-import com.designpatterns.factorymethod.products.Product;
+import com.designpatterns.creational.factorymethod.BookFactory;
+import com.designpatterns.creational.factorymethod.MagazineFactory;
+import com.designpatterns.creational.factorymethod.products.Book;
+import com.designpatterns.creational.factorymethod.products.Magazine;
+import com.designpatterns.creational.factorymethod.products.Product;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
@@ -17,7 +19,7 @@ public class FactoryTest {
     @Test
     void createOneBook(){
         Boolean equal = false;
-        com.designpatterns.factorymethod.BookFactory bookFactory = new com.designpatterns.factorymethod.BookFactory();
+        BookFactory bookFactory = new BookFactory();
         Product product1 = bookFactory.getProduct();
         if(product1 instanceof Book){
             equal = true;
@@ -28,7 +30,7 @@ public class FactoryTest {
     @Test
     void createOneMagazine(){
         Boolean equal = false;
-        com.designpatterns.factorymethod.MagazineFactory magazineFactory = new com.designpatterns.factorymethod.MagazineFactory();
+        MagazineFactory magazineFactory = new MagazineFactory();
 
         Product product2 = magazineFactory.getProduct();
         if(product2 instanceof Magazine){
@@ -41,8 +43,8 @@ public class FactoryTest {
     void usingAFactoryToBuilsAListOfDifferentProducts(){
         Boolean equal = false;
         AtomicInteger qtdeMagazine = new AtomicInteger();
-        com.designpatterns.factorymethod.MagazineFactory magazineFactory = new com.designpatterns.factorymethod.MagazineFactory();
-        com.designpatterns.factorymethod.BookFactory bookFactory = new com.designpatterns.factorymethod.BookFactory();
+        MagazineFactory magazineFactory = new MagazineFactory();
+        BookFactory bookFactory = new BookFactory();
         List<Product> shoppingCart = new ArrayList<>();
         for(int i = 1; i < 20; i++){
             if(i%3==0){

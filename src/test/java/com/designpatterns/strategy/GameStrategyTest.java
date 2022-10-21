@@ -1,7 +1,6 @@
 package com.designpatterns.strategy;
 
-import com.designpatterns.strategy.withstrategy.*;
-import com.designpatterns.strategy.withstrategy.Game;
+import com.designpatterns.behavioural.strategy.withstrategy.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;

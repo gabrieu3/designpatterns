@@ -1,5 +1,6 @@
 package com.designpatterns.abstractfactory;
 
+import com.designpatterns.creational.abstractfactory.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;

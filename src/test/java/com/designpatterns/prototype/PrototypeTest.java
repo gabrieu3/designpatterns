@@ -1,5 +1,7 @@
 package com.designpatterns.prototype;
 
+import com.designpatterns.creational.prototype.Neanderthal;
+import com.designpatterns.creational.prototype.Sapiens;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;

@@ -1,0 +1,31 @@
+Composite
+Categoria: Estrutural (Se preocupam como a forma como os objetos são compostos para formar estruturas maiores).
+
+
+Por que existe?
+    Compor objetos em estruturas de árvores para representar hierarquias partes/todo.
+    Permite aos clientes tratarem de maneira uniforme objetos individuais e composições de objetos.
+
+Vantagens:
+    Facilita criar objetos complexos por composição
+    É fácil gerar uma hierarquia de objetos
+    Facilita usar polimorfismo e recursão
+    Facilita adicionar novos tipos na estrutura (OCP)
+
+Desvantagens
+    Depende da estrutura, pode quebrar o príncipio da segregação de interface (ISP).
+    Objetos do tipo LEAF tendem a ter métodos que não usam ou não fazem nada.
+
+Quando usar?
+    Quando existe uma grande hierarquia de objetos, um objeto dentro de outro e assim por diante.
+    Solução para estruturas complexas e tratado de maneira uniforme.
+    Prioriza a composição ao invés de herança.
+
+    Uma analogia para facilitar o entendimento. Caixa de leite avulsa, ou uma caixa com várias. Ao invés de comprar varias caixas menores,
+    compra-se uma grande. A Caixa grande (Fardinho) é um objeto com vários objetos, portanto o fardinho é o composite.
+
+
+Quando não usar?
+
+
+

@@ -1,10 +1,10 @@
 package com.designpatterns;
 
 
-import com.designpatterns.builder.withbuilder.Address;
-import com.designpatterns.builder.withbuilder.Client;
-import com.designpatterns.builder.withbuilder.Name;
-import com.designpatterns.singleton.ApplicationPropertiesSingleton;
+import com.designpatterns.creational.builder.withbuilder.Address;
+import com.designpatterns.creational.builder.withbuilder.Client;
+import com.designpatterns.creational.builder.withbuilder.Name;
+import com.designpatterns.creational.singleton.ApplicationPropertiesSingleton;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.boot.SpringApplication;
