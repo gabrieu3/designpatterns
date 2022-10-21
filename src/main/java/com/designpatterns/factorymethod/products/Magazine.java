@@ -1,4 +1,4 @@
-package com.designpatterns.factory.products;
+package com.designpatterns.factorymethod.products;
 
 public class Magazine implements Product {
     private Integer ID;

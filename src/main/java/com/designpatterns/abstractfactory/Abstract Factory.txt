@@ -1,0 +1,27 @@
+Abstract Factory
+Classificação: Creational
+
+Por que existe?
+    Fornecer uma interface para criação de famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
+    É um padrão de criação, portanto lida com a criação de objetos.
+    É uma fábrica assim como o Factory Method e geralmente é compostos por múltiplis Factory Methods.
+    Visa Agrupar famílias de produtos compatíveis criando uma fábrica concreta por grupo de objetos compatíveis.
+    Utiliza SRP (Single Responsability Principle), um objeto cria os objetos e o outro só chama as fábricas.
+    Toda a programação fica focada nas interfaces (OCP) -> Open Close Principle
+
+Vantages:
+    Os produtos são compatíveis entre si dentro da factory
+    Claro uso do OPen Close Principle
+    Aplicação clara do SRP.
+
+Desvantagens
+    Complexo para implementar
+
+Quando usar?
+    Quando uma família de objetos precisa ser projetada para ser usada em conjunto e será necessário garantir essa restição.
+    Fornecer uma biblioteca de classes de produtos e revelar somente suas interfaces e não suas implementações.
+
+Quando não usar?
+
+
+
